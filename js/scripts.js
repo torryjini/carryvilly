@@ -57,9 +57,9 @@ window.addEventListener('DOMContentLoaded', event => {
 const product = [
     {
         hrefNumber : 1,
-        imgSrc : "assets/img/product/1.jpg",
-        name : "Threads",
-        summary : "미니캐리어",
+        thumbnail : "assets/img/product/thumbnail/001.jpg",
+        imgSrc : "assets/img/product/001.jpg",
+        summary : "기내용",
         price : "4000",
         size : "24",
         details : "",
@@ -67,9 +67,9 @@ const product = [
     },
     {
         hrefNumber : 2,
+        thumbnail : "assets/img/product/thumbnail/001.jpg",
         imgSrc : "assets/img/product/2.jpg",
-        name : "Explore",
-        summary : "화물용 캐리어",
+        summary : "화물용",
         price : "4000",
         size : "24",
         details : "",
@@ -77,19 +77,19 @@ const product = [
     },
     {
         hrefNumber : 3,
-        imgSrc : "assets/img/product/3.jpg",
-        name : "Finish",
-        summary : "기내용 캐리어",
+        thumbnail : "assets/img/product/thumbnail/003.jpg",
+        imgSrc : "assets/img/product/003.jpg",
+        summary : "화물용",
         price : "4000",
-        size : "24",
+        size : "28",
         details : "",
         status : "대여가능"
     },
     {
         hrefNumber : 4,
-        imgSrc : "assets/img/product/4.jpg",
-        name : "Lines",
-        summary : "Branding",
+        thumbnail : "assets/img/product/thumbnail/004.jpg",
+        imgSrc : "assets/img/product/004.jpg",
+        summary : "기내용",
         price : "4000",
         size : "24",
         details : "",
@@ -97,9 +97,9 @@ const product = [
     },
     {
         hrefNumber : 5,
-        imgSrc : "assets/img/product/5.jpg",
-        name : "Southwest",
-        summary : "Website Design",
+        thumbnail : "assets/img/product/thumbnail/005.jpg",
+        imgSrc : "assets/img/product/005.jpg",
+        summary : "기내용",
         price : "4000",
         size : "24",
         details : "",
@@ -107,9 +107,9 @@ const product = [
     },
     {
         hrefNumber : 6,
-        imgSrc : "assets/img/product/6.jpg",
-        name : "Window",
-        summary : "Photography",
+        thumbnail : "assets/img/product/thumbnail/006.jpg",
+        imgSrc : "assets/img/product/006.jpg",
+        summary : "기내용",
         price : "4000",
         size : "24",
         details : "",
@@ -134,12 +134,12 @@ for(let i = 0; i < product.length; i++){
         </div>
         <img
           class="img-fluid"
-          src=${product[i].imgSrc}
+          src=${product[i].thumbnail}
           alt="..."
         />
       </a>
       <div class="product-caption">
-        <div class="product-caption-heading">[${product[i].status}] ${product[i].name}_${product[i].price}원</div>
+        <div class="product-caption-heading">[${product[i].status}] No.${i+1}_${product[i].price}원</div>
         <div class="product-caption-subheading text-muted">
         ${product[i].summary}
         </div>
@@ -166,7 +166,7 @@ for(let i = 0; i < product.length; i++){
               <div class="col-lg-8">
                 <div class="modal-body">
                   <!-- Project summary-->
-                  <h2 class="text-uppercase">[${product[i].status}] ${product[i].name}</h2>
+                  <h2 class="text-uppercase">[${product[i].status}] No.${i}</h2>
                   <br>
                   <!--<p class="item-intro text-muted">
                     Lorem ipsum dolor sit amet consectetur.
