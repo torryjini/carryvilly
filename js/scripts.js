@@ -110,7 +110,7 @@ const product = [
         summary : "기내용",
         price : "2,000",
         size : "24",
-        details : "바퀴 수리한 제품으로 바퀴를 끄는데 살짝 뻑뻑한 감이 있으며 사용감이 조금 있습니다.",
+        details : "바퀴 수리한 제품으로 바퀴를 끄는데 살짝 뻑뻑한 감이 있으나 사용에는 문제 없습니다.",
         status : "대여가능",
         wheels : "4",
         password : "000"
