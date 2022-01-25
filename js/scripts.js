@@ -60,61 +60,122 @@ const product = [
         thumbnail : "assets/img/product/thumbnail/001.jpg",
         imgSrc : "assets/img/product/001.jpg",
         summary : "기내용",
-        price : "4000",
+        price : "3,000",
         size : "24",
         details : "",
-        status : "대여가능"
+        status : "대여가능",
+        wheels : "4"
     },
     {
         hrefNumber : 2,
-        thumbnail : "assets/img/product/thumbnail/001.jpg",
-        imgSrc : "assets/img/product/2.jpg",
-        summary : "화물용",
-        price : "4000",
+        thumbnail : "assets/img/product/thumbnail/002.jpg",
+        imgSrc : "assets/img/product/002.jpg",
+        summary : "기내용",
+        price : "3,000",
         size : "24",
         details : "",
-        status : "대여가능"
+        status : "대여가능",
+        wheels : "4"
     },
     {
         hrefNumber : 3,
         thumbnail : "assets/img/product/thumbnail/003.jpg",
         imgSrc : "assets/img/product/003.jpg",
         summary : "화물용",
-        price : "4000",
+        price : "4,000",
         size : "28",
         details : "",
-        status : "대여가능"
+        status : "대여가능",
+        wheels : "4"
     },
     {
         hrefNumber : 4,
         thumbnail : "assets/img/product/thumbnail/004.jpg",
         imgSrc : "assets/img/product/004.jpg",
         summary : "기내용",
-        price : "4000",
+        price : "3,000",
         size : "24",
         details : "",
-        status : "대여가능"
+        status : "대여가능",
+        wheels : "4"
     },
     {
         hrefNumber : 5,
         thumbnail : "assets/img/product/thumbnail/005.jpg",
         imgSrc : "assets/img/product/005.jpg",
         summary : "기내용",
-        price : "4000",
+        price : "2,000",
         size : "24",
         details : "",
-        status : "대여가능"
+        status : "대여가능",
+        wheels : "4"
     },
     {
         hrefNumber : 6,
         thumbnail : "assets/img/product/thumbnail/006.jpg",
         imgSrc : "assets/img/product/006.jpg",
         summary : "기내용",
-        price : "4000",
+        price : "2,000",
         size : "24",
         details : "",
-        status : "대여가능"
+        status : "대여가능",
+        wheels : "4"
     },
+    {
+      hrefNumber : 7,
+      thumbnail : "assets/img/product/thumbnail/007.jpg",
+      imgSrc : "assets/img/product/007.jpg",
+      summary : "기내용",
+      price : "2,000",
+      size : "24",
+      details : "",
+      status : "대여가능",
+      wheels : "2"
+  },
+  {
+    hrefNumber : 8,
+    thumbnail : "assets/img/product/thumbnail/008.jpg",
+    imgSrc : "assets/img/product/008.jpg",
+    summary : "화물용",
+    price : "3,000",
+    size : "28",
+    details : "",
+    status : "대여가능",
+    wheels : "4"
+  },
+  {
+    hrefNumber : 9,
+    thumbnail : "assets/img/product/thumbnail/009.jpg",
+    imgSrc : "assets/img/product/009.jpg",
+    summary : "기내용",
+    price : "3,000",
+    size : "24",
+    details : "",
+    status : "대여가능",
+    wheels : "4"
+  },
+  {
+    hrefNumber : 10,
+    thumbnail : "assets/img/product/thumbnail/010.jpg",
+    imgSrc : "assets/img/product/010.jpg",
+    summary : "미니캐리어",
+    price : "2,000",
+    size : "mini",
+    details : "",
+    status : "대여가능",
+    wheels : "0"
+  },
+  {
+    hrefNumber : 11,
+    thumbnail : "assets/img/product/thumbnail/011.jpg",
+    imgSrc : "assets/img/product/011.jpg",
+    summary : "미니캐리어",
+    price : "2,000",
+    size : "mini",
+    details : "",
+    status : "대여가능",
+    wheels : "0"
+  },
 ]
 
 for(let i = 0; i < product.length; i++){
@@ -166,7 +227,7 @@ for(let i = 0; i < product.length; i++){
               <div class="col-lg-8">
                 <div class="modal-body">
                   <!-- Project summary-->
-                  <h2 class="text-uppercase">[${product[i].status}] No.${i}</h2>
+                  <h2 class="text-uppercase">[${product[i].status}] No.${i+1}</h2>
                   <br>
                   <!--<p class="item-intro text-muted">
                     Lorem ipsum dolor sit amet consectetur.
