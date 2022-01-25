@@ -59,28 +59,31 @@ const product = [
         hrefNumber : 1,
         imgSrc : "assets/img/product/1.jpg",
         name : "Threads",
-        summary : "Illustration",
+        summary : "미니캐리어",
         price : "4000",
         size : "24",
-        details : ""
+        details : "",
+        status : "대여가능"
     },
     {
         hrefNumber : 2,
         imgSrc : "assets/img/product/2.jpg",
         name : "Explore",
-        summary : "Graphic Design",
+        summary : "화물용 캐리어",
         price : "4000",
         size : "24",
-        details : ""
+        details : "",
+        status : "대여가능"
     },
     {
         hrefNumber : 3,
         imgSrc : "assets/img/product/3.jpg",
         name : "Finish",
-        summary : "Identity",
+        summary : "기내용 캐리어",
         price : "4000",
         size : "24",
-        details : ""
+        details : "",
+        status : "대여가능"
     },
     {
         hrefNumber : 4,
@@ -89,7 +92,8 @@ const product = [
         summary : "Branding",
         price : "4000",
         size : "24",
-        details : ""
+        details : "",
+        status : "대여가능"
     },
     {
         hrefNumber : 5,
@@ -98,7 +102,8 @@ const product = [
         summary : "Website Design",
         price : "4000",
         size : "24",
-        details : ""
+        details : "",
+        status : "대여가능"
     },
     {
         hrefNumber : 6,
@@ -107,7 +112,8 @@ const product = [
         summary : "Photography",
         price : "4000",
         size : "24",
-        details : ""
+        details : "",
+        status : "대여가능"
     },
 ]
 
@@ -133,7 +139,7 @@ for(let i = 0; i < product.length; i++){
         />
       </a>
       <div class="product-caption">
-        <div class="product-caption-heading">${product[i].name}</div>
+        <div class="product-caption-heading">[${product[i].status}] ${product[i].name}_${product[i].price}원</div>
         <div class="product-caption-subheading text-muted">
         ${product[i].summary}
         </div>
@@ -160,39 +166,36 @@ for(let i = 0; i < product.length; i++){
               <div class="col-lg-8">
                 <div class="modal-body">
                   <!-- Project summary-->
-                  <h2 class="text-uppercase">${product[i].name}</h2>
-                  <p class="item-intro text-muted">
+                  <h2 class="text-uppercase">[${product[i].status}] ${product[i].name}</h2>
+                  <br>
+                  <!--<p class="item-intro text-muted">
                     Lorem ipsum dolor sit amet consectetur.
-                  </p>
+                  </p>-->
                   <img
                     class="img-fluid d-block mx-auto"
                     src=${product[i].imgSrc}
                     alt="..."
                   />
-                  <p>
-                    ${i+1}번째 상품입니다
-                  </p>
-                  <ul class="list-inline">
-                    <li>
-                      <strong>제품명:</strong>
-                      ${product[i].name}
-                    </li>
-                    <li>
-                      <strong>제품번호:</strong>
-                      00${i+1}
-                    </li>
-                    <li>
-                      <strong>특징:</strong>
-                      ${product[i].summary}
-                    </li>
-                  </ul>
+                    <h3>가격 : 하루 ${product[i].price}원</h3>
+                    <h3>사이즈 : ${product[i].summary}</h3>
+                    <h3>특징 : ${product[i].details}</h3>
+                    <h4>현재는 문자로만 주문 가능하며<br>한국외대, 경희대 근처에서만 거래 가능합니다.<br>양해 부탁 드립니다.</h4>
+                    <br>
+                  <a href="sms:010-9941-0158">
+                    <button
+                      class="btn btn-primary btn-xl text-uppercase"
+                      type="button"
+                    >
+                      주문하기
+                    </button>
+                  </a>
                   <button
                     class="btn btn-primary btn-xl text-uppercase"
                     data-bs-dismiss="modal"
                     type="button"
                   >
                     <i class="fas fa-times me-1"></i>
-                    Close Project
+                    닫기
                   </button>
                 </div>
               </div>
