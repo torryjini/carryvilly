@@ -239,8 +239,10 @@ for(let i = 0; i < product.length; i++){
                   />
                     <h3>가격 : 하루 ${product[i].price}원</h3>
                     <h3>사이즈 : ${product[i].summary}</h3>
+                    <h3>바퀴갯수 : ${product[i].wheels}개</h3>
                     <h3>특징 : ${product[i].details}</h3>
-                    <h4>현재는 문자로만 주문 가능하며<br>한국외대, 경희대 근처에서만 거래 가능합니다.<br>양해 부탁 드립니다.</h4>
+                    <br>
+                    <h5>현재는 문자로만 주문 가능하며<br>한예종, 한국외대, 경희대 근처에서만 거래 가능합니다.<br>양해 부탁 드립니다.</h5>
                     <br>
                   <a href="sms:010-9941-0158">
                     <button
