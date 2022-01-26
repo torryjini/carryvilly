@@ -11313,7 +11313,7 @@ p {
   font-weight: 400;
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -11776,4 +11776,28 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.size-tab {
+  margin-bottom: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.size-btn {
+  cursor: pointer;
+  margin: 0 1rem;
+  padding: 0 0.3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#inch-20:checked ~ #inch-20-btn,
+#inch-24:checked ~ #inch-24-btn,
+#inch-28:checked ~ #inch-28-btn,
+#mini:checked ~ #mini-btn {
+  font-size: 1.5rem;
+  border-bottom: solid 2px;
 }
