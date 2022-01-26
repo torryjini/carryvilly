@@ -112,7 +112,7 @@ const product = [
     imgSrc : "assets/img/product/010.jpg",
     summary : "미니캐리어",
     price : "2,000",
-    size : 12,
+    size : 14,
     details : "새 제품입니다.",
     status : "대여가능",
     wheels : "0"
@@ -123,7 +123,7 @@ const product = [
     imgSrc : "assets/img/product/011.jpg",
     summary : "미니캐리어",
     price : "2,000",
-    size : 12,
+    size : 14,
     details : "새 제품입니다.",
     status : "대여가능",
     wheels : "0"
