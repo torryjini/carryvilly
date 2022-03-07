@@ -320,8 +320,7 @@ for(let i = 0; i < product.length; i++){
                     <h4>사이즈 : ${product[i].size}인치</h4>
                     <h4>바퀴갯수 : ${product[i].wheels}개</h4>
                     <p><strong>특징 :</strong> ${product[i].details}</p>
-                    <h5>현재 문자로만 대여주문 가능하며
-                    <br>한예종, 한국외대, 경희대 근처에서만 거래 가능합니다.
+                    <h5>현재 문자로만 대여주문 가능합니다.
                     <br>주문 시 제품번호를 꼭 적어주세요!</h5>
                     <br>
                   <a href="sms:010-9941-0158">
