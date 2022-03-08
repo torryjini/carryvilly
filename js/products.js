@@ -1,8 +1,17 @@
+class luggage {
+  constructor(summary, price, size, details, status, wheels, password){
+    this.summary = summary;
+    this.price = price;
+    this.size = size;
+    this.details = details;
+    this.status = status;
+    this.wheels = wheels;
+    this.password = password;
+  }
+}
+
 const product = [
     {
-        hrefNumber : 1,
-        thumbnail : "assets/img/product/thumbnail/thumbnail_001.jpg",
-        imgSrc : "assets/img/product/detail_001.jpg",
         summary : "기내용",
         price : "3,000",
         size : 20,
@@ -12,9 +21,6 @@ const product = [
         password : "000"
     },
     {
-        hrefNumber : 2,
-        thumbnail : "assets/img/product/thumbnail/thumbnail_002.jpg",
-        imgSrc : "assets/img/product/detail_002.jpg",
         summary : "기내용",
         price : "3,000",
         size : 20,
@@ -24,9 +30,6 @@ const product = [
         password : "000"
     },
     {
-        hrefNumber : 3,
-        thumbnail : "assets/img/product/thumbnail/thumbnail_003.jpg",
-        imgSrc : "assets/img/product/detail_003.jpg",
         summary : "화물용/중형",
         price : "4,000",
         size : 24,
@@ -36,9 +39,6 @@ const product = [
         password : "000"
     },
     {
-        hrefNumber : 4,
-        thumbnail : "assets/img/product/thumbnail/thumbnail_004.jpg",
-        imgSrc : "assets/img/product/detail_004.jpg",
         summary : "기내용",
         price : "3,000",
         size : 20,
@@ -48,9 +48,6 @@ const product = [
         password : "000"
     },
     {
-        hrefNumber : 5,
-        thumbnail : "assets/img/product/thumbnail/thumbnail_005.jpg",
-        imgSrc : "assets/img/product/detail_005.jpg",
         summary : "기내용",
         price : "2,000",
         size : 20,
@@ -60,9 +57,6 @@ const product = [
         password : "000"
     },
     {
-        hrefNumber : 6,
-        thumbnail : "assets/img/product/thumbnail/thumbnail_006.jpg",
-        imgSrc : "assets/img/product/detail_006.jpg",
         summary : "기내용",
         price : "2,000",
         size : 20,
@@ -72,9 +66,6 @@ const product = [
         password : "304"
     },
     {
-      hrefNumber : 7,
-      thumbnail : "assets/img/product/thumbnail/thumbnail_007.jpg",
-      imgSrc : "assets/img/product/detail_007.jpg",
       summary : "기내용",
       price : "2,000",
       size : 20,
@@ -84,9 +75,6 @@ const product = [
       password : "000"
   },
   {
-    hrefNumber : 8,
-    thumbnail : "assets/img/product/thumbnail/thumbnail_008.jpg",
-    imgSrc : "assets/img/product/detail_008.jpg",
     summary : "화물용/중형",
     price : "3,000",
     size : 24,
@@ -96,9 +84,6 @@ const product = [
     password : "000"
   },
   {
-    hrefNumber : 9,
-    thumbnail : "assets/img/product/thumbnail/thumbnail_009.jpg",
-    imgSrc : "assets/img/product/detail_009.jpg",
     summary : "기내용/소형",
     price : "3,000",
     size : 20,
@@ -108,9 +93,6 @@ const product = [
     password : "000"
   },
   {
-    hrefNumber : 10,
-    thumbnail : "assets/img/product/thumbnail/thumbnail_010.jpg",
-    imgSrc : "assets/img/product/detail_010.jpg",
     summary : "미니캐리어",
     price : "2,000",
     size : 14,
@@ -120,9 +102,6 @@ const product = [
     password : "000"
   },
   {
-    hrefNumber : 11,
-    thumbnail : "assets/img/product/thumbnail/thumbnail_011.jpg",
-    imgSrc : "assets/img/product/detail_011.jpg",
     summary : "미니캐리어",
     price : "2,000",
     size : 14,
@@ -132,9 +111,6 @@ const product = [
     password : "000"
   },
   {
-    hrefNumber : 12,
-    thumbnail : "assets/img/product/thumbnail/thumbnail_012.jpg",
-    imgSrc : "assets/img/product/detail_012.jpg",
     summary : "기내용/소형",
     price : "3,000",
     size : 20,
@@ -144,9 +120,6 @@ const product = [
     password : "000"
   },
   {
-    hrefNumber : 13,
-    thumbnail : "assets/img/product/thumbnail/thumbnail_013.jpg",
-    imgSrc : "assets/img/product/detail_013.jpg",
     summary : "화물형/중형",
     price : "4,000",
     size : 24,
@@ -156,9 +129,6 @@ const product = [
     password : "000"
   },
   {
-    hrefNumber : 14,
-    thumbnail : "assets/img/product/thumbnail/thumbnail_014.jpg",
-    imgSrc : "assets/img/product/detail_014.jpg",
     summary : "화물형/대형",
     price : "5,000",
     size : 28,
@@ -168,9 +138,6 @@ const product = [
     password : "906"
   },
   {
-    hrefNumber : 15,
-    thumbnail : "assets/img/product/thumbnail/thumbnail_015.jpg",
-    imgSrc : "assets/img/product/detail_015.jpg",
     summary : "화물형/중형",
     price : "4,000",
     size : 24,
@@ -180,9 +147,6 @@ const product = [
     password : "613"
   },
   {
-    hrefNumber : 16,
-    thumbnail : "assets/img/product/thumbnail/thumbnail_016.jpg",
-    imgSrc : "assets/img/product/detail_016.jpg",
     summary : "기내용/소형",
     price : "3,000",
     size : 20,
@@ -211,7 +175,7 @@ for(let i = 0; i < product.length; i++){
         </div>
         <img
           class="img-fluid"
-          src=${product[i].thumbnail}
+          src="assets/img/product/thumbnail/thumbnail_${i+1}.jpg"
           alt="..."
         />
       </a>
@@ -241,7 +205,7 @@ for(let i = 0; i < product.length; i++){
         </div>
         <img
           class="img-fluid"
-          src=${product[i].thumbnail}
+          src="assets/img/product/thumbnail/thumbnail_${i+1}.jpg"
           alt="..."
         />
       </a>
@@ -271,7 +235,7 @@ for(let i = 0; i < product.length; i++){
         </div>
         <img
           class="img-fluid"
-          src=${product[i].thumbnail}
+          src="assets/img/product/thumbnail/thumbnail_${i+1}.jpg"
           alt="..."
         />
       </a>
@@ -311,7 +275,7 @@ for(let i = 0; i < product.length; i++){
                   </p>-->
                   <img
                     class="img-fluid d-block mx-auto"
-                    src=${product[i].imgSrc}
+                    src="assets/img/product/detail_${i+1}.jpg"
                     alt="..."
                   />
                     <h4>제품번호 : No.${i+1}_${product[i].summary}</h4>
