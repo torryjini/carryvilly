@@ -216,6 +216,7 @@ for(let i = 0; i < product.length; i++){
             <i class="fas fa-plus fa-3x"></i>
           </div>
         </div>
+        <div class="${product[i].status}">${product[i].status}</div>
         <img
           class="img-fluid"
           src="assets/img/product/thumbnail/thumbnail_${i+1}.jpg"
@@ -223,7 +224,7 @@ for(let i = 0; i < product.length; i++){
         />
       </a>
       <div class="product-caption">
-        <div class="product-caption-heading">[${product[i].status}] No.${i+1}_${product[i].price}원</div>
+        <div class="product-caption-heading">No.${i+1}_${product[i].price}원</div>
         <div class="product-caption-subheading text-muted">
         ${product[i].summary}/${product[i].size}인치
         </div>
@@ -246,6 +247,7 @@ for(let i = 0; i < product.length; i++){
             <i class="fas fa-plus fa-3x"></i>
           </div>
         </div>
+        <div class="${product[i].status}">${product[i].status}</div>
         <img
           class="img-fluid"
           src="assets/img/product/thumbnail/thumbnail_${i+1}.jpg"
@@ -253,7 +255,7 @@ for(let i = 0; i < product.length; i++){
         />
       </a>
       <div class="product-caption">
-        <div class="product-caption-heading">[${product[i].status}] No.${i+1}_${product[i].price}원</div>
+        <div class="product-caption-heading">No.${i+1}_${product[i].price}원</div>
         <div class="product-caption-subheading text-muted">
         ${product[i].summary}/${product[i].size}인치
         </div>
@@ -276,6 +278,7 @@ for(let i = 0; i < product.length; i++){
             <i class="fas fa-plus fa-3x"></i>
           </div>
         </div>
+        <div class="${product[i].status}">${product[i].status}</div>
         <img
           class="img-fluid"
           src="assets/img/product/thumbnail/thumbnail_${i+1}.jpg"
@@ -283,7 +286,7 @@ for(let i = 0; i < product.length; i++){
         />
       </a>
       <div class="product-caption">
-        <div class="product-caption-heading">[${product[i].status}] No.${i+1}_${product[i].price}원</div>
+        <div class="product-caption-heading">No.${i+1}_${product[i].price}원</div>
         <div class="product-caption-subheading text-muted">
         ${product[i].summary}/${product[i].size}인치
         </div>
