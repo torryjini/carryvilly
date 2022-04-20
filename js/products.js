@@ -76,12 +76,12 @@ const product = [
     },
     {
         summary : "기내용",
-        price : "2,000",
+        price : "3,000",
         size : 20,
-        details : "잠금장치에 이상이 있어 비밀번호 사용이 불가합니다. 사용에는 지장 없습니다.",
+        details : "생활 스크래치가 있으나 사용에는 지장 없습니다.",
         status : "대여가능",
         wheels : "4",
-        password : "304",
+        password : "243",
         url : orderUrl,
         target : targetBlank
     },
