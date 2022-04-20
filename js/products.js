@@ -12,7 +12,7 @@ class luggage {
   }
 }
 
-const blankUrl = "#"
+const blankUrl = "javascript:return false;"
 const orderUrl = "https://hmdvfor9vvr.typeform.com/to/nDhB8iZp?typeform-source=carryvilly.netlify.app"
 
 const targetNone = "_self"
@@ -181,6 +181,17 @@ const product = [
     status : "대여가능",
     wheels : "4",
     password : "613",
+    url : orderUrl,
+    target : targetBlank
+  },
+  {
+    summary : "기내용/소형",
+    price : "3,000",
+    size : 20,
+    details : "사용감이 거의 없는 좋은 제품입니다.",
+    status : "대여가능",
+    wheels : "4",
+    password : "000",
     url : orderUrl,
     target : targetBlank
   },
