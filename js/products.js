@@ -343,7 +343,7 @@ for(let i = 0; i < product.length; i++){
                     <p><strong>특징 :</strong> ${product[i].details}</p>
                     <h5>주문 시 제품번호를 꼭 적어주세요!</h5>
                     <br>
-                  <a href=${product[i].url} target=${product[i].target}>
+                  <a class="order-link" href=${product[i].url} target=${product[i].target}>
                     <button
                       class="btn btn-primary btn-xl text-uppercase"
                       type="button"
@@ -372,7 +372,6 @@ for(let i = 0; i < product.length; i++){
 function sizeTabHandler() {
     const inch20 = document.querySelector("#inch-20")
     const inch24 = document.querySelector("#inch-24")
-    const inch28 = document.querySelector("#inch-28")
     const mini = document.querySelector("#mini")
 
     if(inch20.checked) {
