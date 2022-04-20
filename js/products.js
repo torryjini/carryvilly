@@ -13,7 +13,7 @@ class luggage {
 }
 
 const blankUrl = "javascript:return false;"
-const orderUrl = "https://hmdvfor9vvr.typeform.com/to/nDhB8iZp?typeform-source=carryvilly.netlify.app"
+const orderUrl = "https://forms.gle/4zCvdF8Sk7WDUfzB8"
 
 const targetNone = "_self"
 const targetBlank = "_blank"
