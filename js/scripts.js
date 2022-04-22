@@ -53,21 +53,24 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-// const orderLink = document.querySelector(".order-link");
+const orderLink = document.querySelectorAll(".order-link");
 
-// window.onload = function(){
-//     orderLink.addEventListener("click", function() {
-//         const content = `가격은 하루 대여 가격이며 대여 당일부터 청구됩니다.
-//         대여 최소 3일 전에 주문 부탁드리며 당일 예약 시 취소 및 환불이 불가합니다. 
-//         반납일 오후 2시 전까지 반납이 원칙이며 초과시간에 따라 추가비용이 청구됩니다.`
-//         if(orderLink.href == "javascript:return false;"){
-//             swal("현재 대여가 불가합니다!", "", "error")
-//             console.log("대여중")
-//         } else {
-//             swal("이용안내", content, "info").then(okay => {
-//                 window.location.href == orderUrl
-//             })
-//             console.log("대여가능")
-//         }
-//     })
-// }
+window.onload = function(){
+    const content = `가격은 하루 대여 가격이며 대여 당일부터 청구됩니다.
+        대여 최소 3일 전에 주문 부탁드리며 당일 예약 시 취소 및 환불이 불가합니다. 
+        반납일 오후 2시 전까지 반납이 원칙이며 초과시간에 따라 추가비용이 청구됩니다.`
+     
+    for(i=0;i<orderLink.length;i++){
+        if(orderLink[i].href == blankUrl){
+            orderLink[i].addEventListener("click", function(){
+                swal("현재 대여가 불가합니다!", "", "error")
+            })
+        } else {
+            orderLink[i].addEventListener("click", function(){
+                swal("이용안내", content, "info").then(okay => {
+                    window.open("https://forms.gle/4zCvdF8Sk7WDUfzB8")
+                })  
+            })
+        }
+    }
+}

@@ -12,8 +12,8 @@ class luggage {
   }
 }
 
-const blankUrl = "javascript:return false;"
-const orderUrl = "https://forms.gle/4zCvdF8Sk7WDUfzB8"
+const blankUrl = "javascript:return"
+const orderUrl = "javascript: return false"
 
 const targetNone = "_self"
 const targetBlank = "_blank"
@@ -28,7 +28,7 @@ const product = [
         wheels : "4",
         password : "000",
         url : blankUrl,
-        target : targetNone
+        //target :targetNone
     },
     {
         summary : "기내용",
@@ -39,7 +39,7 @@ const product = [
         wheels : "4",
         password : "000",
         url : orderUrl,
-        target : targetBlank        
+        //target :targetBlank        
     },
     {
         summary : "화물용/중형",
@@ -50,7 +50,7 @@ const product = [
         wheels : "4",
         password : "000",
         url : orderUrl,
-        target : targetBlank
+        //target :targetBlank
     },
     {
         summary : "기내용",
@@ -61,7 +61,7 @@ const product = [
         wheels : "4",
         password : "000",
         url : orderUrl,
-        target : targetBlank
+        //target :targetBlank
     },
     {
         summary : "기내용",
@@ -72,7 +72,7 @@ const product = [
         wheels : "4",
         password : "000",
         url : orderUrl,
-        target : targetBlank
+        //target :targetBlank
     },
     {
         summary : "기내용",
@@ -83,7 +83,7 @@ const product = [
         wheels : "4",
         password : "243",
         url : orderUrl,
-        target : targetBlank
+        //target :targetBlank
     },
     {
       summary : "기내용",
@@ -94,7 +94,7 @@ const product = [
       wheels : "2",
       password : "000",
       url : orderUrl,
-      target : targetBlank
+      //target :targetBlank
   },
   {
     summary : "화물용/중형",
@@ -105,7 +105,7 @@ const product = [
     wheels : "4",
     password : "000",
     url : orderUrl,
-    target : targetBlank
+    //target :targetBlank
   },
   {
     summary : "기내용/소형",
@@ -116,7 +116,7 @@ const product = [
     wheels : "4",
     password : "000",
     url : orderUrl,
-    target : targetBlank
+    //target :targetBlank
   },
   {
     summary : "미니캐리어",
@@ -127,7 +127,7 @@ const product = [
     wheels : "0",
     password : "000",
     url : orderUrl,
-    target : targetBlank
+    //target :targetBlank
   },
   {
     summary : "미니캐리어",
@@ -138,7 +138,7 @@ const product = [
     wheels : "0",
     password : "000",
     url : orderUrl,
-    target : targetBlank
+    //target :targetBlank
   },
   {
     summary : "기내용/소형",
@@ -149,7 +149,7 @@ const product = [
     wheels : "4",
     password : "000",
     url : orderUrl,
-    target : targetBlank
+    //target :targetBlank
   },
   {
     summary : "화물형/중형",
@@ -160,7 +160,7 @@ const product = [
     wheels : "4",
     password : "000",
     url : orderUrl,
-    target : targetBlank
+    //target :targetBlank
   },
   {
     summary : "화물형/대형",
@@ -171,7 +171,7 @@ const product = [
     wheels : "4",
     password : "906",
     url : orderUrl,
-    target : targetBlank
+    //target :targetBlank
   },
   {
     summary : "화물형/중형",
@@ -182,7 +182,7 @@ const product = [
     wheels : "4",
     password : "613",
     url : orderUrl,
-    target : targetBlank
+    //target :targetBlank
   },
   {
     summary : "기내용/소형",
@@ -193,7 +193,7 @@ const product = [
     wheels : "4",
     password : "000",
     url : orderUrl,
-    target : targetBlank
+    //target :targetBlank
   },
   {
     summary : "기내용/소형",
@@ -204,7 +204,7 @@ const product = [
     wheels : "4",
     password : "000",
     url : orderUrl,
-    target : targetBlank
+    //target :targetBlank
   },
 ]
 
@@ -343,7 +343,7 @@ for(let i = 0; i < product.length; i++){
                     <p><strong>특징 :</strong> ${product[i].details}</p>
                     <h5>주문 시 제품번호를 꼭 적어주세요!</h5>
                     <br>
-                  <a class="order-link" href=${product[i].url} target=${product[i].target}>
+                  <a class="order-link" href=${product[i].url}>
                     <button
                       class="btn btn-primary btn-xl text-uppercase"
                       type="button"
