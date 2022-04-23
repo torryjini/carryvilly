@@ -24,10 +24,10 @@ const product = [
         price : "3,000",
         size : 20,
         details : "No.2와 같은 제품, 다른 색상입니다. 겉에 스크래치는 있으나 사용에는 전혀 지장 없습니다. 4/23부터 대여가능",
-        status : "대여중",
+        status : "대여가능",
         wheels : "4",
         password : "000",
-        url : blankUrl,
+        url : orderUrl,
         //target :targetNone
     },
     {
