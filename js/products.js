@@ -341,7 +341,8 @@ for(let i = 0; i < product.length; i++){
                     <h4>사이즈 : ${product[i].size}인치</h4>
                     <h4>바퀴갯수 : ${product[i].wheels}개</h4>
                     <p><strong>특징 :</strong> ${product[i].details}</p>
-                    <h5>주문 시 제품번호를 꼭 적어주세요!</h5>
+                    <h5>원하는 크기의 캐리어를 무작위로 받으시면 첫 날의 대여비용이 청구되지 않습니다! 
+                    </h5>
                     <br>
                   <a class="order-link" href=${product[i].url}>
                     <button
