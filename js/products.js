@@ -337,7 +337,7 @@ for(let i = 0; i < product.length; i++){
                   />
                     <h4>제품번호 : No.${i+1}_${product[i].summary}</h4>
                     <h4>대여여부 : ${product[i].status}</h4>
-                    <h4>가격 : 일주일 대여 6,000원/일주일 이상 대여 10,000원</h4>
+                    <h4>가격 : 일주일 대여 6,000원/일주일 이상 대여 10,000원/2주 이상 대여는 15,000원</h4>
                     <h4>사이즈 : ${product[i].size}인치</h4>
                     <h4>바퀴갯수 : ${product[i].wheels}개</h4>
                     <p><strong>특징 :</strong> ${product[i].details}</p>
