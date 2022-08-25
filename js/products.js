@@ -18,13 +18,19 @@ const orderUrl = "javascript: return false"
 const targetNone = "_self"
 const targetBlank = "_blank"
 
+const price2024 = "일주일 이내 6,000원/2주 이내 10,000원/15일 이상 15,000원"
+const priceMini = "기내용/화물용 캐리어 대여 시에만 추가 대여 가능하며 기간 상관없이 2,000원"
+
+const able = "대여가능"
+const notAble = "대여중"
+
 const product = [
     {
         summary : "기내용",
-        price : "000",
+        price : price2024,
         size : 20,
         details : "No.2와 같은 제품, 다른 색상입니다. 겉에 스크래치는 있으나 사용에는 전혀 지장 없습니다. 4/23부터 대여가능",
-        status : "대여가능",
+        status : able,
         wheels : "4",
         password : "000",
         url : orderUrl,
@@ -32,10 +38,10 @@ const product = [
     },
     {
         summary : "기내용",
-        price : "000",
+        price : price2024,
         size : 20,
         details : "No.1와 같은 제품, 다른 색상입니다. 겉에 스크래치는 있으나 사용에는 전혀 지장 없습니다.",
-        status : "대여가능",
+        status : able,
         wheels : "4",
         password : "000",
         url : orderUrl,
@@ -43,10 +49,10 @@ const product = [
     },
     {
         summary : "화물용/중형",
-        price : "000",
+        price : price2024,
         size : 24,
         details : "No.4와 세트로 나온 제품으로 대형 캐리어입니다. 사용에는 전혀 지장 없습니다.",
-        status : "대여가능",
+        status : able,
         wheels : "4",
         password : "000",
         url : orderUrl,
@@ -54,10 +60,10 @@ const product = [
     },
     {
         summary : "기내용",
-        price : "000",
+        price : price2024,
         size : 20,
         details : "No.3와 세트로 나온 제품으로 일반형 캐리어입니다. 사용에는 전혀 지장 없습니다.",
-        status : "대여가능",
+        status : able,
         wheels : "4",
         password : "000",
         url : orderUrl,
@@ -65,10 +71,10 @@ const product = [
     },
     {
         summary : "기내용",
-        price : "000",
+        price : price2024,
         size : 20,
         details : "바퀴 수리한 제품으로 바퀴를 끄는데 살짝 뻑뻑한 감이 있으나 사용에는 지장 없습니다.",
-        status : "대여가능",
+        status : able,
         wheels : "4",
         password : "000",
         url : orderUrl,
@@ -76,10 +82,10 @@ const product = [
     },
     {
         summary : "기내용",
-        price : "000",
+        price : price2024,
         size : 20,
         details : "생활 스크래치가 있으나 사용에는 지장 없습니다.",
-        status : "대여가능",
+        status : able,
         wheels : "4",
         password : "243",
         url : orderUrl,
@@ -87,10 +93,10 @@ const product = [
     },
     {
       summary : "기내용",
-      price : "000",
+      price : price2024,
       size : 20,
       details : "비밀번호 잠금장치의 고장으로 잠기지 않습니다. 사용에는 지장 없습니다.",
-      status : "대여가능",
+      status : able,
       wheels : "2",
       password : "000",
       url : orderUrl,
@@ -98,10 +104,10 @@ const product = [
   },
   {
     summary : "화물용/중형",
-    price : "000",
+    price : price2024,
     size : 24,
     details : "겉에 스크래치가 많고 옆으로 세울시 받침대 한개가 유실되었습니다. 그외 사용에는 지장 없습니다.",
-    status : "대여가능",
+    status : able,
     wheels : "4",
     password : "000",
     url : orderUrl,
@@ -109,10 +115,10 @@ const product = [
   },
   {
     summary : "기내용/소형",
-    price : "000",
+    price : price2024,
     size : 20,
     details : "사용감 거의 없는 좋은 제품입니다.",
-    status : "대여가능",
+    status : able,
     wheels : "4",
     password : "000",
     url : orderUrl,
@@ -120,10 +126,10 @@ const product = [
   },
   {
     summary : "미니캐리어",
-    price : "000",
+    price : priceMini,
     size : 14,
     details : "새 제품입니다.",
-    status : "대여가능",
+    status : able,
     wheels : "0",
     password : "000",
     url : orderUrl,
@@ -131,10 +137,10 @@ const product = [
   },
   {
     summary : "미니캐리어",
-    price : "000",
+    price : priceMini,
     size : 14,
     details : "새 제품입니다.",
-    status : "대여가능",
+    status : able,
     wheels : "0",
     password : "000",
     url : orderUrl,
@@ -142,10 +148,10 @@ const product = [
   },
   {
     summary : "기내용/소형",
-    price : "000",
+    price : price2024,
     size : 20,
     details : "살짝 금이 간 부분이 있으나(수리예정) 사용에는 전혀 지장 없습니다.",
-    status : "대여가능",
+    status : able,
     wheels : "4",
     password : "000",
     url : orderUrl,
@@ -153,10 +159,10 @@ const product = [
   },
   {
     summary : "화물형/중형",
-    price : "000",
+    price : price2024,
     size : 24,
     details : "스크래치가 조금 있으나 사용에는 전혀 지장 없습니다.",
-    status : "대여가능",
+    status : able,
     wheels : "4",
     password : "000",
     url : orderUrl,
@@ -164,10 +170,10 @@ const product = [
   },
   {
     summary : "화물형/대형",
-    price : "000",
+    price : price2024,
     size : 28,
     details : "겉면에 얼룩이 조금 묻어있으나 사용한 적이 거의 없는 좋은 제품입니다.",
-    status : "대여가능",
+    status : able,
     wheels : "4",
     password : "906",
     url : orderUrl,
@@ -175,10 +181,10 @@ const product = [
   },
   {
     summary : "화물형/중형",
-    price : "000",
+    price : price2024,
     size : 24,
     details : "아랫 부분에 까진 부분이 조금 있으나 사용에는 전혀 이상없습니다.",
-    status : "대여가능",
+    status : notAble,
     wheels : "4",
     password : "613",
     url : orderUrl,
@@ -186,10 +192,10 @@ const product = [
   },
   {
     summary : "기내용/소형",
-    price : "000",
+    price : price2024,
     size : 20,
     details : "사용감이 거의 없는 좋은 제품입니다.",
-    status : "대여가능",
+    status : able,
     wheels : "4",
     password : "000",
     url : orderUrl,
@@ -197,10 +203,10 @@ const product = [
   },
   {
     summary : "기내용/소형",
-    price : "000",
+    price : price2024,
     size : 20,
     details : "사용감이 거의 없는 좋은 제품입니다.",
-    status : "대여가능",
+    status : able,
     wheels : "4",
     password : "000",
     url : orderUrl,
@@ -337,7 +343,7 @@ for(let i = 0; i < product.length; i++){
                   />
                     <h4>제품번호 : No.${i+1}_${product[i].summary}</h4>
                     <h4>대여여부 : ${product[i].status}</h4>
-                    <h4>대여가격 : 일주일 6,000원/2주일 10,000원/2주 이상 15,000원</h4>
+                    <h4>대여가격 : ${product[i].price}</h4>
                     <h4>사이즈 : ${product[i].size}인치</h4>
                     <h4>바퀴갯수 : ${product[i].wheels}개</h4>
                     <p><strong>특징 :</strong> ${product[i].details}</p>
