@@ -70,7 +70,7 @@ window.onload = function(){
         } else {
             orderLink[i].addEventListener("click", function(){
                 swal("이용안내", content, "info").then(okay => {
-                    window.open("https://forms.gle/83CaEiC7Y5iGfCvU6")
+                    window.open("order.html")
                 })  
             })
         }

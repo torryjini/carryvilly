@@ -1,0 +1,131 @@
+body {
+  padding-top: 1rem;
+  text-align: center;
+  margin-left: 18%;
+  margin-right: 18%;
+}
+
+img {
+  width: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+table {
+  margin: auto;
+  width: 53%;
+  border: solid 1px black;
+}
+
+caption {
+  text-align: right;
+  padding: 0;
+}
+
+th {
+  background-color: #ffc800;
+}
+
+th,
+td {
+  border: solid 0.5px black;
+}
+
+label {
+  font-size: 1.3rem;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 0.3rem;
+}
+
+/* input[type=text],
+input[type=email],
+input[type=tel], */
+input,
+select {
+  margin-bottom: 0.3rem;
+  font-size: 1.2rem;
+}
+
+input {
+  width: 15rem;
+  text-align: center;
+}
+
+#mini {
+  width: 2rem;
+  -ms-transform: scale(1.5); /* IE */
+
+  -moz-transform: scale(1.5); /* FF */
+
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+
+  -o-transform: scale(1.5); /* Opera */
+}
+
+select {
+  width: 14rem;
+}
+
+#c_number {
+  width: 7rem;
+}
+
+.dateTime {
+  width: 10rem;
+}
+
+#price {
+  width: 7rem;
+  text-align: center;
+}
+
+#address {
+  width: 95%;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #ffc800;
+  margin-top: 1rem;
+  width: 10rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+input[type="submit"]:hover {
+  border: none;
+  color: #ffc800;
+  background-color: antiquewhite;
+}
+
+@media (orientation: portrait) {
+  body {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  input {
+    width: 10rem;
+  }
+
+  select {
+    width: 5rem;
+  }
+
+  #c_number {
+    width: 5rem;
+  }
+
+  .dateTime {
+    width: 10rem;
+  }
+
+  #term {
+    width: 13rem;
+  }
+}

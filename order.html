@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>캐리빌리 주문서</title>
+    <link rel="icon" type="image/x-icon" href="assets/carryvilly_logo.png" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <meta property="og:image" content="assets/thumbnail.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/order.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <h2><img src="assets/carryvilly_logo.png" />&nbsp;캐리빌리 주문서</h2>
+    <form action="">
+      <table>
+        <caption>
+          *는 필수사항입니다.
+        </caption>
+        <tr>
+          <th><label for="username">이름*</label></th>
+          <td>
+            <input
+              type="text"
+              name="name"
+              placeholder="김캐리"
+              id="username"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <th><label for="useremail">이메일*</label></th>
+          <td>
+            <input
+              type="email"
+              name="email"
+              placeholder="example@mail.com"
+              id="useremail"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <th><label for="userphone">전화번호*</label></th>
+          <td>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="010-1234-5678"
+              id="userphone"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">*개인정보는 캐리어 대여 관련해서만 사용됩니다.</td>
+        </tr>
+        <tr>
+          <th><label for="size_select">사이즈*</label></th>
+          <td>
+            <select name="size" id="size_select" required>
+              <option value="기내용_20인치">기내용_20인치 이하</option>
+              <option value="화물용_24인치">화물용_24인치</option>
+              <option value="화물용_28인치">화물용_28인치</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="c_number">캐리어번호</label>
+          </th>
+          <td>
+            <input type="text" id="c_number" placeholder="예시)12번" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p>
+              *선택한 크기의 캐리어 중 랜덤으로 받길 원하시면 캐리어번호는
+              비워두세요!
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="term">대여기간*</label></th>
+          <td>
+            <select name="term" id="term" required>
+              <option value="일주일 이내">일주일 이내_6,000원</option>
+              <option value="2주 이내">2주 이내_10,000원</option>
+              <option value="15일 이상">15일 이상_15,000원</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="currentDate">대여일*</label></th>
+          <td>
+            <input
+              type="date"
+              name="date_start"
+              id="currentDate"
+              class="dateTime"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <th><label for="date_end">반납일*</label></th>
+          <td>
+            <input
+              type="date"
+              name="date_end"
+              id="date_end"
+              class="dateTime"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <th><label for="time">대여시간</label></th>
+          <td>
+            <input
+              type="time"
+              id="time"
+              class="dateTime"
+              value="12:00:00"
+              min="09:00:00"
+              max="20:00:00"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p>
+              *직거래로 받기 원하시면 대여시간을 반드시 설정해주세요. 대여시간은
+              조정될 수 있습니다!
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="">미니캐리어</label></th>
+          <td>
+            <input type="checkbox" id="mini" value="미니캐리어 추가" /><label
+              for="mini"
+            >
+              추가(+2,000원)</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <th><label>대여가격</label></th>
+          <td><input type="text" id="price" value="6000" readonly />원</td>
+        </tr>
+        <tr>
+          <th colspan="4"><label for="address">대여장소*</label></th>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="받으실 장소 혹은 주소를 상세히 적어주세요"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p>
+              *중앙대학교, 한국외국어대학교, 한국예술종합학교 근처는 직거래
+              가능합니다. 그 외 주소는 택배 배송만 가능하며 배송비가 발생합니다.
+            </p>
+            <input type="submit" name="submit" class="btn" value="주문완료" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/order.js"></script>
+  </body>
+</html>
