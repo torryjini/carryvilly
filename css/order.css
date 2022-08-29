@@ -109,6 +109,10 @@ input[type="submit"]:hover {
     margin-right: 3%;
   }
 
+  table {
+    margin: 0;
+  }
+
   input {
     width: 10rem;
   }

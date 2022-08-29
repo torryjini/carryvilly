@@ -70,25 +70,24 @@ document.getElementById("currentDate").value = new Date()
           var dateEnd = document.getElementById("date_end");
           var address = document.getElementById("address");
 
-          console.log(templateParams)
-          // if(name.value == "" || email.value == "" || phone.value == "" || dateEnd.value == "" || address.value == ""){
-          //   swal("필수정보를 입력해주세요", "* 표시는 필수입니다", "error");
-          // } else {
-          //   emailjs
-          //   .send("carryvilly", "template_4imxwbm", templateParams)
-          //   //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
-          //   .then(
-          //     function (response) {
-          //       // console.log("SUCCESS!", response.status, response.text);
-          //       swal("주문이 완료되었습니다!", "메일함을 확인해주세요!","success").then(okay => {
-          //           window.close();
-          //       }) ;
-          //     },
-          //     function (error) {
-          //       // console.log("FAILED...", error);
-          //       swal("잠시 후 다시 시도해주세요...", "", "error");
-          //     }
-          //   );
-          // }
+          if(name.value == "" || email.value == "" || phone.value == "" || dateEnd.value == "" || address.value == ""){
+            swal("필수정보를 입력해주세요", "* 표시는 필수입니다", "error");
+          } else {
+            emailjs
+            .send("carryvilly", "template_4imxwbm", templateParams)
+            //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
+            .then(
+              function (response) {
+                // console.log("SUCCESS!", response.status, response.text);
+                swal("주문이 완료되었습니다!", "메일함을 확인해주세요!","success").then(okay => {
+                    window.close();
+                }) ;
+              },
+              function (error) {
+                // console.log("FAILED...", error);
+                swal("잠시 후 다시 시도해주세요...", "", "error");
+              }
+            );
+          }
         });
       });
