@@ -19,16 +19,15 @@ document.getElementById("currentDate").value = new Date()
 
       function priceCal() {
         var term = $("#term").val();
+        noMini.checked = true;
+        mini.checked = false;
 
         if (term == "일주일 이내") {
           price.value = "6000";
-          mini.checked = false;
         } else if (term == "2주 이내") {
           price.value = "10000";
-          mini.checked = false;
         } else if (term == "15일 이상") {
           price.value = "15000";
-          mini.checked = false;
         }
       }
 
