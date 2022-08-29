@@ -107,7 +107,7 @@ const product = [
     price : price2024,
     size : 24,
     details : "겉에 스크래치가 많고 옆으로 세울시 받침대 한개가 유실되었습니다. 그외 사용에는 지장 없습니다.",
-    status : able,
+    status : notAble,
     wheels : "4",
     password : "000",
     url : orderUrl,
