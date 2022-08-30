@@ -13,9 +13,13 @@ h2 {
   font-size: 2rem;
 }
 
+form {
+  text-align: center;
+}
+
 table {
   margin: auto;
-  width: 53%;
+  width: 60%;
   border: solid 1px black;
 }
 
