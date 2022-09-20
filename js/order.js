@@ -41,7 +41,7 @@ document.getElementById("currentDate").value = new Date()
           var purpose;
           for (var i=0; i<purposeLength; i++) {
             if(document.getElementsByName("purpose")[2].checked == true){
-              purpose = "기타_" + document.getElementsByClassName("etc-content").value;
+              purpose = "기타_" + document.getElementsById("etc-content").value;
             } else if (document.getElementsByName("purpose")[i].checked == true) {
                 purpose = document.getElementsByName("purpose")[i].value;
             }
