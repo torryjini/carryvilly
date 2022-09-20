@@ -35,7 +35,7 @@ document.getElementById("currentDate").value = new Date()
 
       $(document).ready(function () {
         emailjs.init("QHRm4EKaGVeosJWZR");
-        $("input[name=submit]").click(function (event) {
+        $("input[name=submit]").submit(function (event) {
           event.preventDefault();
           var purposeLength = document.getElementsByName("purpose").length;
           var purpose;
