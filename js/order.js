@@ -43,7 +43,7 @@ document.getElementById("currentDate").value = new Date()
             if(document.getElementsByName("purpose")[2].checked == true){
               purpose = "기타_" + document.getElementById("etc-content").value;
             } else if (document.getElementsByName("purpose")[i].checked == true) {
-                purpose = document.getElementsByName("purpose")[i].value;
+              purpose = document.getElementsByName("purpose")[i].value;
             }
           }
 
@@ -55,7 +55,6 @@ document.getElementById("currentDate").value = new Date()
                 miniBool = document.getElementsByName("mini")[j].value;
               }
           }
-
 
           var templateParams = {
             //각 요소는 emailJS에서 설정한 템플릿과 동일한 명으로 작성!
