@@ -96,6 +96,14 @@
           </td>
         </tr>
         <tr>
+          <th><label for="">대여목적</label></th>
+          <td>
+            <input type="radio" name="purpose" class="radioBtn" id="travel" value="여행" checked><label for="travel">여행</label>
+            <input type="radio" name="purpose" class="radioBtn" id="carry" value="운반"><label for="carry">운반</label>
+            <input type="radio" name="purpose" class="radioBtn" id="etc" value="기타"><label for="etc">기타 <input type="text" class="etc-content"></label>
+          </td>
+        </tr>
+        <tr>
           <th><label for="term">대여기간*</label></th>
           <td>
             <select name="term" id="term" required>
@@ -157,12 +165,14 @@
               type="radio"
               name="mini"
               id="mini"
+              class="radioBtn"
               value="추가(+2,000원)"
             /><label for="mini"> 추가(+2,000원)</label>
             <input
               type="radio"
               name="mini"
               id="no-mini"
+              class="radioBtn"
               value="추가 안 함"
               checked
             />
@@ -190,7 +200,7 @@
         <tr>
           <td colspan="2">
             <p>
-              *중앙대학교, 한국외국어대학교, 한국예술종합학교 근처는 직거래
+              *한국외국어대학교, 한국예술종합학교 근처는 직거래
               가능합니다. 그 외 주소는 택배 배송만 가능하며 배송비가 발생합니다.
             </p>
             <input type="submit" name="submit" class="btn" value="주문완료" />

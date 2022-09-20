@@ -35,16 +35,27 @@ document.getElementById("currentDate").value = new Date()
 
       $(document).ready(function () {
         emailjs.init("QHRm4EKaGVeosJWZR");
-        $("input[name=submit]").click(function () {
+        $("input[name=submit]").click(function (event) {
           event.preventDefault();
+          var purposeLength = document.getElementsByName("purpose").length;
+          var purpose;
+          for (var i=0; i<purposeLength; i++) {
+            if(document.getElementsByName("purpose")[2].checked == true){
+              purpose = "기타_" + document.getElementsByClassName("etc-content").value;
+            } else if (document.getElementsByName("purpose")[i].checked == true) {
+                purpose = document.getElementsByName("purpose")[i].value;
+            }
+          }
+
           var miniLength = document.getElementsByName("mini").length;
           var miniBool;
 
-          for (var i=0; i<miniLength; i++) {
-            if (document.getElementsByName("mini")[i].checked == true) {
-                miniBool = document.getElementsByName("mini")[i].value;
+          for (var j=0; j<miniLength; j++) {
+            if (document.getElementsByName("mini")[j].checked == true) {
+                miniBool = document.getElementsByName("mini")[j].value;
               }
           }
+
 
           var templateParams = {
             //각 요소는 emailJS에서 설정한 템플릿과 동일한 명으로 작성!
@@ -53,6 +64,7 @@ document.getElementById("currentDate").value = new Date()
             email: $("input[name=email]").val(),
             size: $("#size_select").val(),
             cNumber: $("#c_number").val(),
+            purpose: purpose,
             mini: miniBool,
             term: $("#term").val(),
             date_start: $("#currentDate").val(),
@@ -65,7 +77,6 @@ document.getElementById("currentDate").value = new Date()
           var name = document.getElementById("username");
           var email = document.getElementById("useremail");
           var phone = document.getElementById("userphone");
-          var dateStart = document.getElementById("currentDate");
           var dateEnd = document.getElementById("date_end");
           var address = document.getElementById("address");
 

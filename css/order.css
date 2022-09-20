@@ -60,7 +60,11 @@ input {
   text-align: center;
 }
 
-#mini, #no-mini {
+.etc-content {
+  width: 7rem;
+}
+
+.radioBtn {
   width: 2rem;
   -ms-transform: scale(1.5); /* IE */
 
