@@ -35,14 +35,17 @@ document.getElementById("currentDate").value = new Date()
 
       $(document).ready(function () {
         emailjs.init("QHRm4EKaGVeosJWZR");
-        $("input[name=submit]").submit(function (event) {
+        $("input[name=submit]").click(function (event) {
           event.preventDefault();
+          
           var purposeLength = document.getElementsByName("purpose").length;
           var purpose;
+
           for (var i=0; i<purposeLength; i++) {
             if(document.getElementsByName("purpose")[2].checked == true){
               purpose = "기타_" + document.getElementById("etc-content").value;
-            } else if (document.getElementsByName("purpose")[i].checked == true) {
+            } else 
+            if (document.getElementsByName("purpose")[i].checked == true) {
               purpose = document.getElementsByName("purpose")[i].value;
             }
           }
@@ -76,6 +79,7 @@ document.getElementById("currentDate").value = new Date()
           var name = document.getElementById("username");
           var email = document.getElementById("useremail");
           var phone = document.getElementById("userphone");
+          var dateStart = document.getElementById("currentDate");
           var dateEnd = document.getElementById("date_end");
           var address = document.getElementById("address");
 
@@ -100,3 +104,7 @@ document.getElementById("currentDate").value = new Date()
           }
         });
       });
+
+      document.addEventListener("submit", (event)=>{
+        event.preventDefault();
+      })
