@@ -18,7 +18,7 @@ const orderUrl = "javascript: return false"
 const targetNone = "_self"
 const targetBlank = "_blank"
 
-const price2024 = "일주일 이내 6,000원/2주 이내 10,000원/15일 이상 15,000원"
+const price2024 = "일주일 이내 7,000원/2주 이내 10,000원/15일 이상 15,000원"
 const priceMini = "기내용/화물용 캐리어 대여 시에만 추가 대여 가능하며 기간 상관없이 2,000원"
 
 const able = "대여가능"
@@ -172,8 +172,8 @@ const product = [
     summary : "화물형/대형",
     price : price2024,
     size : 28,
-    details : "겉면에 얼룩이 조금 묻어있으나 사용한 적이 거의 없는 좋은 제품입니다.",
-    status : able,
+    details : "사용감 거의 없는 좋은 제품입니다.",
+    status : notAble,
     wheels : "4",
     password : "906",
     url : orderUrl,
@@ -206,7 +206,7 @@ const product = [
     price : price2024,
     size : 20,
     details : "사용감이 거의 없는 좋은 제품입니다.",
-    status : notAble,
+    status : able,
     wheels : "4",
     password : "000",
     url : orderUrl,
@@ -228,7 +228,7 @@ const product = [
     price : price2024,
     size : 20,
     details : "사용감이 거의 없는 좋은 제품입니다.",
-    status : able,
+    status : notAble,
     wheels : "4",
     password : "000",
     url : orderUrl,
@@ -239,7 +239,7 @@ const product = [
     price : price2024,
     size : 28,
     details : "사용감이 거의 없는 좋은 제품입니다.",
-    status : able,
+    status : notAble,
     wheels : "4",
     password : "000",
     url : orderUrl,
@@ -269,6 +269,12 @@ const product = [
   },
 ]
 
+const aWeekPrice = "7,000"
+const twoWeeksPrice = "10,000"
+const threeWeeksPrice = "15,000"
+
+document.getElementById("price-inform").innerText = `가격은 <u><strong>일주일 이내 대여 ${aWeekPrice}원/2주 이내 대여 ${twoWeeksPrice}원/15일 이상 대여는 ${threeWeeksPrice}원</strong></u>입니다.
+<br>반납일 오후 2시 전까지 반납이 원칙이며 초과 시 추가비용 2,000원이 부과됩니다.`
 
 // 캐리어 관련
 

@@ -23,7 +23,7 @@ document.getElementById("currentDate").value = new Date()
         mini.checked = false;
 
         if (term == "일주일 이내") {
-          price.value = "6000";
+          price.value = "7000";
         } else if (term == "2주 이내") {
           price.value = "10000";
         } else if (term == "15일 이상") {
