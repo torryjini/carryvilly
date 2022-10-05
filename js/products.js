@@ -34,7 +34,7 @@ const product = [
         wheels : "4",
         password : "000",
         url : orderUrl,
-        //target :targetNone
+        //target :targetNone 1번
     },
     {
         summary : "기내용",
@@ -45,7 +45,7 @@ const product = [
         wheels : "4",
         password : "000",
         url : orderUrl,
-        //target :targetBlank        
+        //target :targetBlank 2번   
     },
     {
         summary : "화물용/중형",
@@ -56,7 +56,7 @@ const product = [
         wheels : "4",
         password : "000",
         url : orderUrl,
-        //target :targetBlank
+        //target :targetBlank 3번
     },
     {
         summary : "기내용",
@@ -67,7 +67,7 @@ const product = [
         wheels : "4",
         password : "000",
         url : orderUrl,
-        //target :targetBlank
+        //target :targetBlank 4번
     },
     {
         summary : "기내용",
@@ -78,7 +78,7 @@ const product = [
         wheels : "4",
         password : "000",
         url : orderUrl,
-        //target :targetBlank
+        //target :targetBlank 5번
     },
     {
         summary : "기내용",
@@ -89,7 +89,7 @@ const product = [
         wheels : "4",
         password : "243",
         url : orderUrl,
-        //target :targetBlank
+        //target :targetBlank 6번
     },
     {
       summary : "기내용",
@@ -100,7 +100,7 @@ const product = [
       wheels : "2",
       password : "000",
       url : orderUrl,
-      //target :targetBlank
+      //target :targetBlank 7번
   },
   {
     summary : "화물용/중형",
@@ -111,7 +111,7 @@ const product = [
     wheels : "4",
     password : "000",
     url : orderUrl,
-    //target :targetBlank
+    //target :targetBlank 8번
   },
   {
     summary : "기내용/소형",
@@ -122,7 +122,7 @@ const product = [
     wheels : "4",
     password : "000",
     url : orderUrl,
-    //target :targetBlank
+    //target :targetBlank 9번
   },
   {
     summary : "미니캐리어",
@@ -133,7 +133,7 @@ const product = [
     wheels : "0",
     password : "000",
     url : orderUrl,
-    //target :targetBlank
+    //target :targetBlank 10번
   },
   {
     summary : "미니캐리어",
@@ -144,7 +144,7 @@ const product = [
     wheels : "0",
     password : "000",
     url : orderUrl,
-    //target :targetBlank
+    //target :targetBlank 11번
   },
   {
     summary : "기내용/소형",
@@ -155,7 +155,7 @@ const product = [
     wheels : "4",
     password : "000",
     url : orderUrl,
-    //target :targetBlank
+    //target :targetBlank 12번
   },
   {
     summary : "화물형/중형",
@@ -166,7 +166,7 @@ const product = [
     wheels : "4",
     password : "000",
     url : orderUrl,
-    //target :targetBlank
+    //target :targetBlank 13번
   },
   {
     summary : "화물형/대형",
@@ -177,7 +177,7 @@ const product = [
     wheels : "4",
     password : "906",
     url : orderUrl,
-    //target :targetBlank
+    //target :targetBlank 14번
   },
   {
     summary : "화물형/중형",
@@ -188,7 +188,7 @@ const product = [
     wheels : "4",
     password : "613",
     url : orderUrl,
-    //target :targetBlank
+    //target :targetBlank 15번
   },
   {
     summary : "기내용/소형",
@@ -199,18 +199,18 @@ const product = [
     wheels : "4",
     password : "000",
     url : orderUrl,
-    //target :targetBlank
+    //target :targetBlank 16번
   },
   {
     summary : "기내용/소형",
     price : price2024,
     size : 20,
     details : "사용감이 거의 없는 좋은 제품입니다.",
-    status : notAble,
+    status : able,
     wheels : "4",
     password : "000",
     url : orderUrl,
-    //target :targetBlank
+    //target :targetBlank 17번
   },
   {
     summary : "기내용/소형",
@@ -221,7 +221,7 @@ const product = [
     wheels : "4",
     password : "486",
     url : orderUrl,
-    //target :targetBlank
+    //target :targetBlank 18번
   },
   {
     summary : "기내용/소형",
@@ -232,7 +232,7 @@ const product = [
     wheels : "4",
     password : "000",
     url : orderUrl,
-    //target :targetBlank
+    //target :targetBlank 19번
   },
   {
     summary : "화물용/대형",
@@ -243,7 +243,7 @@ const product = [
     wheels : "4",
     password : "000",
     url : orderUrl,
-    //target :targetBlank
+    //target :targetBlank 20번
   },
   {
     summary : "기내용/소형",
@@ -254,7 +254,7 @@ const product = [
     wheels : "4",
     password : "000",
     url : orderUrl,
-    //target :targetBlank
+    //target :targetBlank 21번
   },
   {
     summary : "미니캐리어",
@@ -265,7 +265,7 @@ const product = [
     wheels : "4",
     password : "000",
     url : orderUrl,
-    //target :targetBlank
+    //target :targetBlank 22번
   },
 ]
 
