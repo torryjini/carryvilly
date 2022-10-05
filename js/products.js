@@ -52,7 +52,7 @@ const product = [
         price : price2024,
         size : 24,
         details : "No.4와 세트로 나온 제품으로 대형 캐리어입니다. 사용에는 전혀 지장 없습니다.",
-        status : notAble,
+        status : able,
         wheels : "4",
         password : "000",
         url : orderUrl,
