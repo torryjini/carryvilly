@@ -184,7 +184,7 @@ const product = [
     price : price2024,
     size : 24,
     details : "아랫 부분에 까진 부분이 조금 있으나 사용에는 전혀 이상없습니다.",
-    status : able,
+    status : notAble,
     wheels : "4",
     password : "613",
     url : orderUrl,
