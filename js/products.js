@@ -273,7 +273,7 @@ const aWeekPrice = "7,000"
 const twoWeeksPrice = "10,000"
 const threeWeeksPrice = "15,000"
 
-document.getElementById("price-inform").innerText = `가격은 <u><strong>일주일 이내 대여 ${aWeekPrice}원/2주 이내 대여 ${twoWeeksPrice}원/15일 이상 대여는 ${threeWeeksPrice}원</strong></u>입니다.
+document.getElementById("price-inform").innerHTML = `가격은 <u><strong>일주일 이내 대여 ${aWeekPrice}원/2주 이내 대여 ${twoWeeksPrice}원/15일 이상 대여는 ${threeWeeksPrice}원</strong></u>입니다.
 <br>반납일 오후 2시 전까지 반납이 원칙이며 초과 시 추가비용 2,000원이 부과됩니다.`
 
 // 캐리어 관련
