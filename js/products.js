@@ -170,7 +170,7 @@ const product = [
     price : price2024,
     size : 24,
     details : "스크래치가 조금 있으나 사용에는 전혀 지장 없습니다.",
-    status : able,
+    status : notAble,
     wheels : "4",
     password : "000",
     url : orderUrl,
