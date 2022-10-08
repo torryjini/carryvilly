@@ -22,12 +22,12 @@ document.getElementById("currentDate").value = new Date()
         noMini.checked = true;
         mini.checked = false;
 
-        if (term == "일주일 이내") {
-          price.value = "7000";
-        } else if (term == "2주 이내") {
+        if (term == "일주일") {
           price.value = "10000";
-        } else if (term == "15일 이상") {
+        } else if (term == "2주") {
           price.value = "15000";
+        } else if (term == "15일 이상") {
+          price.value = "20000";
         }
       }
 
