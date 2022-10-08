@@ -228,7 +228,7 @@ const product = [
     price : price2024,
     size : 20,
     details : "사용감이 거의 없는 좋은 제품입니다.",
-    status : notAble,
+    status : ble,
     wheels : "4",
     password : "000",
     url : orderUrl,
@@ -274,7 +274,7 @@ const twoWeeksPrice = "10,000"
 const threeWeeksPrice = "15,000"
 
 document.getElementById("price-inform").innerHTML = `가격은 <u><strong>일주일 이내 대여 ${aWeekPrice}원/2주 이내 대여 ${twoWeeksPrice}원/15일 이상 대여는 ${threeWeeksPrice}원</strong></u>입니다.
-<br>반납일 오후 2시 전까지 반납이 원칙이며 초과 시 추가비용 2,000원이 부과됩니다.`
+<br>반납일 오후 2시 전까지 반납이 원칙이며 초과 시 추가비용(하루 2,000원)이 부과됩니다.`
 
 // 캐리어 관련
 
