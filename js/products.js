@@ -18,8 +18,8 @@ const orderUrl = "javascript: return false"
 const targetNone = "_self"
 const targetBlank = "_blank"
 
-const aWeekPrice = "10,000"
-const twoWeeksPrice = "15,000"
+const aWeekPrice = "7,000"
+const twoWeeksPrice = "13,000"
 const threeWeeksPrice = "20,000"
 
 document.getElementById("price-inform").innerHTML = `가격은 <u><strong>일주일 대여 ${aWeekPrice}원/2주 대여 ${twoWeeksPrice}원/15일 이상 대여는 ${threeWeeksPrice}원</strong></u>입니다.
