@@ -49,7 +49,7 @@ const product = [
         price : price2024,
         size : 20,
         details : "No.1와 같은 제품, 다른 색상입니다. 겉에 스크래치는 있으나 사용에는 전혀 지장 없습니다.",
-        status : able,
+        status : notAble,
         wheels : "4",
         password : "000",
         url : orderUrl,
