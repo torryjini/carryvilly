@@ -225,9 +225,9 @@ const product = [
     price : price2024,
     size : 20,
     details : "사용감이 거의 없는 좋은 제품입니다.",
-    status : notAble,
+    status : able,
     wheels : "4",
-    password : "486",
+    password : "000",
     url : orderUrl,
     //target :targetBlank 18번
   },
