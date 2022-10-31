@@ -194,7 +194,7 @@ const product = [
     details : "아랫 부분에 까진 부분이 조금 있으나 사용에는 전혀 이상없습니다.",
     status : able,
     wheels : "4",
-    password : "613",
+    password : "000",
     url : orderUrl,
     //target :targetBlank 15번
   },
