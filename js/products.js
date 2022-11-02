@@ -95,7 +95,7 @@ const product = [
         details : "생활 스크래치가 있으나 사용에는 지장 없습니다.",
         status : able,
         wheels : "4",
-        password : "243",
+        password : "000",
         url : orderUrl,
         //target :targetBlank 6번
     },
