@@ -95,7 +95,7 @@ const product = [
         details : "생활 스크래치가 있으나 사용에는 지장 없습니다.",
         status : able,
         wheels : "4",
-        password : "000",
+        password : "243",
         url : orderUrl,
         //target :targetBlank 6번
     },
@@ -181,7 +181,7 @@ const product = [
     price : price2024,
     size : 28,
     details : "사용감 거의 없는 좋은 제품입니다.",
-    status : notAble,
+    status : able,
     wheels : "4",
     password : "906",
     url : orderUrl,
@@ -214,7 +214,7 @@ const product = [
     price : price2024,
     size : 20,
     details : "사용감이 거의 없는 좋은 제품입니다.",
-    status : notAble,
+    status : able,
     wheels : "4",
     password : "000",
     url : orderUrl,
@@ -282,7 +282,7 @@ const product = [
 for(let i = 0; i < product.length; i++){
   if(product[i].size == 20){
     document.querySelector("#inch-20-list").innerHTML += `
-    <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="col-lg-3 col-sm-6 mb-4">
     <!-- product item ${i+1}-->
     <div class="product-item">
       <a
@@ -313,7 +313,7 @@ for(let i = 0; i < product.length; i++){
     `
   } else if(product[i].size >= 24) {
     document.querySelector("#inch-24-list").innerHTML += `
-    <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="col-lg-3 col-sm-6 mb-4">
     <!-- product item ${i+1}-->
     <div class="product-item">
       <a
@@ -344,7 +344,7 @@ for(let i = 0; i < product.length; i++){
     `
   } else {
     document.querySelector("#mini-list").innerHTML += `
-    <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="col-lg-3 col-sm-6 mb-4">
     <!-- product item ${i+1}-->
     <div class="product-item">
       <a
