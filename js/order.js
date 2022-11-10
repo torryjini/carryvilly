@@ -4,18 +4,16 @@ document.getElementById("currentDate").value = new Date()
 
       var price = document.getElementById("price");
       var mini = document.getElementById("mini");
-      var noMini = document.getElementById("no-mini")
 
       function miniOption() {
         if (mini.checked) {
           price.value = parseInt(price.value) + 2000;
-        } else if (noMini.checked){
+        } else {
           price.value = parseInt(price.value) - 2000;
         }
       }
 
       mini.addEventListener("change", miniOption);
-      noMini.addEventListener("change", miniOption);
 
       function priceCal() {
         var term = $("#term").val();
@@ -37,26 +35,13 @@ document.getElementById("currentDate").value = new Date()
         emailjs.init("QHRm4EKaGVeosJWZR");
         $("input[name=submit]").click(function (event) {
           event.preventDefault();
-          
-          var purposeLength = document.getElementsByName("purpose").length;
-          var purpose;
 
-          for (var i=0; i<purposeLength; i++) {
-            if(document.getElementsByName("purpose")[2].checked == true){
-              purpose = "기타_" + document.getElementById("etc-content").value;
-            } else 
-            if (document.getElementsByName("purpose")[i].checked == true) {
-              purpose = document.getElementsByName("purpose")[i].value;
-            }
-          }
-
-          var miniLength = document.getElementsByName("mini").length;
           var miniBool;
 
-          for (var j=0; j<miniLength; j++) {
-            if (document.getElementsByName("mini")[j].checked == true) {
-                miniBool = document.getElementsByName("mini")[j].value;
-              }
+          if (document.getElementById("mini").checked) {
+            miniBool = "추가(+2,000원)";
+          } else {
+            miniBool = "추가 안 함"
           }
 
           var templateParams = {
@@ -66,7 +51,7 @@ document.getElementById("currentDate").value = new Date()
             email: $("input[name=email]").val(),
             size: $("#size_select").val(),
             cNumber: $("#c_number").val(),
-            purpose: purpose,
+            destination: $("#destination").val(),
             mini: miniBool,
             term: $("#term").val(),
             date_start: $("#currentDate").val(),
