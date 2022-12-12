@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.1da3977b.css",
+    "main.css": "/static/css/main.e31970cc.css",
     "main.js": "/static/js/main.bae84ca5.js",
     "static/media/aboutItem02.png": "/static/media/aboutItem02.69a4f2512b131a282add.png",
     "static/media/aboutItem00.png": "/static/media/aboutItem00.f4118d630176271d60c8.png",
@@ -13,11 +13,11 @@
     "static/media/aboutItem03.jpg": "/static/media/aboutItem03.2cbe0483a572d3439d10.jpg",
     "static/media/aboutItem04.jpg": "/static/media/aboutItem04.35152726673752965f58.jpg",
     "index.html": "/index.html",
-    "main.1da3977b.css.map": "/static/css/main.1da3977b.css.map",
+    "main.e31970cc.css.map": "/static/css/main.e31970cc.css.map",
     "main.bae84ca5.js.map": "/static/js/main.bae84ca5.js.map"
   },
   "entrypoints": [
-    "static/css/main.1da3977b.css",
+    "static/css/main.e31970cc.css",
     "static/js/main.bae84ca5.js"
   ]
 }
