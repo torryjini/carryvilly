@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.fcede778.css",
+    "main.css": "/static/css/main.4acf4190.css",
     "main.js": "/static/js/main.02db0613.js",
+    "static/media/PC091004.JPG": "/static/media/PC091004.e72b0f9aaa2a9e589973.JPG",
     "static/media/aboutItem02.png": "/static/media/aboutItem02.69a4f2512b131a282add.png",
     "static/media/aboutItem00.png": "/static/media/aboutItem00.f4118d630176271d60c8.png",
     "static/media/aboutItem01.png": "/static/media/aboutItem01.6156865d7563c55590a1.png",
     "static/media/map-image.png": "/static/media/map-image.3cd6dd9808474f6ed762.png",
-    "static/media/header-bg.jpg": "/static/media/header-bg.3e5a863c0ff3ff8a3efe.jpg",
     "static/media/carryvilly_logo.png": "/static/media/carryvilly_logo.89c566891b1e1b723ced.png",
     "static/media/basic-profile.png": "/static/media/basic-profile.3fdbdfe8b20542c9fa17.png",
     "static/media/쭈롱.png": "/static/media/쭈롱.8abe4bbdc31aa2beb49e.png",
     "static/media/aboutItem03.jpg": "/static/media/aboutItem03.2cbe0483a572d3439d10.jpg",
     "static/media/aboutItem04.jpg": "/static/media/aboutItem04.35152726673752965f58.jpg",
     "index.html": "/index.html",
-    "main.fcede778.css.map": "/static/css/main.fcede778.css.map",
+    "main.4acf4190.css.map": "/static/css/main.4acf4190.css.map",
     "main.02db0613.js.map": "/static/js/main.02db0613.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcede778.css",
+    "static/css/main.4acf4190.css",
     "static/js/main.02db0613.js"
   ]
 }
